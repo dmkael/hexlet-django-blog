@@ -1,9 +1,9 @@
 # from django.shortcuts import render
-from hexlet_django_blog.views import View
+from hexlet_django_blog.views import MainView
 
 
 # Create your views here.
-class ArticleView(View):
+class ArticleView(MainView):
     template_name = 'article/index1.html'
 
     def get_context_data(self, **kwargs):

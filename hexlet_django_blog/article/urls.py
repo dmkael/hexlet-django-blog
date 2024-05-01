@@ -1,6 +1,6 @@
 from django.urls import path
-from hexlet_django_blog.article.views import ArticleView
+from hexlet_django_blog.article import views
 
 urlpatterns = [
-    path('', ArticleView.as_view()),
+    path('', views.ArticleView.as_view()),
 ]
