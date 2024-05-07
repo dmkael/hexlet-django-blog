@@ -1,9 +1,11 @@
-{% extends "base.html" %}
-
-{% block title %}Эксперименты с Django на Хекслете{% endblock %}
+{% extends "index.html" %}
 
 {% block content %}
-    <h1>О блоге</h1>
-    <p>Эксперименты с Django на Хекслете</p>
-    <p>{{ tags|join:', ' }}</p>
+      <h1>О блоге</h1>
+      <p>Эксперименты с Django на Хекслете</p>
+      {% for tag in tags %}
+      <ul>
+            <li>{{ tag }}</li>
+      </ul>
+      {% endfor %}
 {% endblock %}
