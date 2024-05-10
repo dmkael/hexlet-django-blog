@@ -17,7 +17,7 @@ class MainView(TemplateView):
         return context
 
     def get(self, request, *args, **kwargs):
-        return redirect(reverse_lazy('article', kwargs={'tags': 'python', 'article_id': 4}))
+        return redirect(reverse_lazy('article', kwargs={'id': 4}))
 
 
 def about(request):
